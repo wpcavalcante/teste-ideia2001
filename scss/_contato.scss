@@ -1,0 +1,91 @@
+header{
+    .navbar{
+        display: flex;
+        align-items: center;
+        .nav-logo-wrapper{
+            max-width: 12.2rem;
+            height: 3.8rem;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .nav-itens{
+            display: flex;
+            align-items: center;
+            .menu-icon-wrapper{
+                margin-left: 1.6rem;
+            }
+        }
+    }
+}
+
+
+
+.contato-page{
+    background-color: white;
+}
+
+.main-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        width: 100%;
+        color: var(--main-color1);
+        background-color: #f2f2f2;
+        padding: 1.5rem;
+    }
+    .contato-info{
+        margin: 1.5rem;
+        width: 100%;
+            li{
+                display: flex;
+                align-items: center;
+                padding: 1.6rem;
+                border-bottom: 1px solid #e8e8e8;
+                font-size: 1.4rem;
+                img{
+                    margin-right: 2rem;
+                }
+            }
+        
+    }
+    .social-links{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 30.2rem;
+        width: 100%;
+        margin-top: 4.6rem;
+        li{
+            img{
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.contato-footer{
+    bottom: -3rem;
+    text-align: center;
+    width: 100vw;
+    background-color: var(--main-color1);
+    cursor: pointer;
+    &:hover{
+        background-color: var(--main-color3);
+    }
+    h2{
+        color: white;
+        padding: 1.5rem 0;
+    }
+}
+
+@media(max-height:500px){
+    .main-contato{
+        .social-links{
+            display: none;
+        }
+    }
+}
